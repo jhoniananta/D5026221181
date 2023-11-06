@@ -76,3 +76,8 @@ Route::get('linktree-hokben', function () {
 Route::get('burgerBites', function () {
     return view('burgerBites');
 });
+
+// Route controller
+
+Route::get('perkalian', 'App\Http\Controllers\DosenController@index');
+Route::get('show', 'App\Http\Controllers\DosenController@showBlog' );
