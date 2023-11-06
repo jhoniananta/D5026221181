@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
+}
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+.area-awal{
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Navbar when scrolled */
+.navbar{
+  transition: all 0.5s;
+}
+.navbar-scrolled{
+  background-color: #222831;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Custom Home */
+.bg-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider_section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 45px 0 75px 0;
+}
+
+.slider_section .row {
+  align-items: center;
+}
+
+.slider_section #customCarousel1 {
+  width: 100%;
+  position: unset;
+}
+
+.slider_section .detail-box {
+  color: #ffffff;
+  margin-bottom: 145px;
+}
+
+.slider_section .detail-box h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.slider_section .detail-box p {
+  font-size: 1.4rem;
+}
+
+.slider_section .detail-box a {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #ffbe33;
+  color: #ffffff;
+  border-radius: 45px;
+  transition: all 0.3s;
+  border: none;
+  margin-top: 10px;
+}
+
+.slider_section .detail-box a:hover {
+  background-color: #e69c00;
+}
+
+.slider_section .img-box img {
+  width: 100%;
+}
+
+/* CSS CARD */
+.card{
+  max-width: 40em;
+  flex-direction: row;
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18);
+}
+
+.card img{
+  max-width: 25%;
+  margin: auto;
+  padding: 0.5em;
+  border-radius: 0.7em;
+}
+
+.card-body{
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-section{
+  max-width: 70%;
+}
+
+.cta-section{
+  max-width: 30%;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.cta-section .btn{
+  padding: 0.3em 0.5em;
+  background-color: #898989;
+  border-color:#898989;
+}
+
+.cta-section .btn:hover{
+  background-color: transparent;
+  color: black;
+}
+
+/* CSS for dark card */
+.card-dark{
+  background-color: #898989;
+  color: #ffffff;
+}
+
+.cta-section .dark-btn{
+  padding: 0.3em 0.5em;
+  background-color: white;
+  border-color:white;
+}
+
+/* Section Custom About CSS */
+
+.about_section {
+  background: #222831;
+  color: #ffffff;
+  padding: 90px 0;
+}
+
+.about_section .row {
+  align-items: center;
+}
+
+.about_section .img-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.about_section .img-box img {
+  padding: 2.5rem 0 2.5rem 0;
+  width: 100%;
+  max-width: 445px;
+  position: relative;
+  z-index: 2;
+}
+
+.about_section .detail-box p {
+  font-size: 1.1rem;
+  margin-top: 15px;
+}
+
+.about_section .detail-box a {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #ffbe33;
+  color: #ffffff;
+  border-radius: 45px;
+  transition: all 0.3s;
+  border: none;
+  margin-top: 15px;
+}
+
+.about_section .detail-box a:hover {
+  background-color: #e69c00;
+}
+
+/* Custom CSS Section form contact */
+
+.form-group input{
+  border-radius: 10px;
+  border: 2px solid #898989;
+  display: block;
+}
+
+.form-group textarea{
+  border-radius: 10px;
+  border: 2px solid #898989;
+  display: block;
+}
+
+.error {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
+}
+
+.form-group input:focus {
+  outline: 0;
+}
+
+.form-group.success input {
+  border-color: #09c372;
+}
+
+.form-group .error input {
+  border-color: #ff3860;
+}
+
+
+/* Footer */
+footer{
+  width: 100%;
+  font-weight: bold;
+  background-color: #222831;
+  text-align: center;
+}
+
+footer p{
+  background-color: #222831;
+  color: white;
+}
+
+/* CSS for responsive (mobile) */
+@media screen and (max-width:475px) {
+  /* Responsive section home */
+  .area-awal{
+    padding-top: 1.2rem;
+  }
+
+  /* Responsive section menu */
+  .card {
+    font-size: 1.2em;
+    flex-direction: column;
+  }
+  .card img{
+    max-width: 100%;
+    margin: auto;
+    padding: 0.6em;
+    border-radius: 0.7em;
+  }
+
+  .text-section{
+    max-width: 90%;
+  }
+  
+  .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .cta-section{
+    max-width: 100%;
+    margin-top: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cta-section .btn{
+    padding: 0.4em 0.6em;
+  }
+
+  /* Responsive section about */
+  .detail-box a{
+    margin: 15px;
+  }
+
+  .about_section .img-box img{
+    margin: 15px;
+  }
+  .detail-box h1{
+    margin: 15px;
+  }
+
+  .detail-box p{
+    font-size: 1.1rem;
+    margin: 15px 15px;
+  }
+}

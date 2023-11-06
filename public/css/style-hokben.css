@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Space+Mono:wght@400;700&display=swap");
+
+html{
+    height: 100%;
+}
+body {
+    background-color: rgb(255, 248, 224);
+    font-family:'Space Mono', sans-serif;
+}
+
+.jhoni-container{
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    max-width: 680px;
+}
+
+h1{
+    margin: 0px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+
+h2{
+    color: #66635a;
+    font-size: medium;
+    text-decoration-thickness: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+p{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.jhoni-container-top{
+    display: absolute;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.jhoni-container-top-text{
+    margin: 4px 0px 0px;
+    padding: 0px 40px;
+}
+
+.jhoni-icon-hokben{
+    border-radius: 50%;
+    display: block;
+    object-fit: contain;
+    object-position: contain;
+    filter: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 96px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.jhoni-container-main{
+    padding-top: 12px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+a{
+    height: auto;
+    position: relative;
+    width: 100%;
+    appearance: none;
+    box-sizing: border-box;
+    vertical-align: middle;
+    text-decoration: none;
+    color: black;  
+}
+
+.jhoni-link{
+    z-index: 0;
+    margin:auto;
+    max-height: 74px;
+    padding: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    position: relative;
+    height: auto;
+    margin-bottom: 16px;
+    width: 665px;
+    border: 0.5px solid grey;
+    border-radius: 36px;
+}
+
+.jhoni-container-main p{
+    font-size: medium;
+    font-weight: bold;
+    padding: 16px 0px;
+    margin: 0px;
+    line-height: 1.5;
+    width: 100%;
+}
+
+.jhoni-link:hover{
+    transform: scale(1.03);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.1s;
+}
+
+.jhoni-link img{
+    position: absolute;
+    transform: translateY(-50%);
+    pointer-events: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    top: 50%;
+    left: 8px;  
+}
+
+.jhoni-container-bottom{
+    display: block;
+    padding: 40px 0px;
+    margin: auto;
+    text-align: center;
+    width: 95px;
+}
