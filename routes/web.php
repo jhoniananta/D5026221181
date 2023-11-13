@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,7 +26,7 @@ Route::get('halo2', function () {
 	return "<h1>Halo, Selamat datang</h1>";
 });
 
-Route::get('blog', function () {
+Route::get('blog2', function () {
     return view('blog');
 });
 
@@ -81,3 +82,13 @@ Route::get('burgerBites', function () {
 
 Route::get('perkalian', 'App\Http\Controllers\DosenController@index');
 Route::get('show', 'App\Http\Controllers\DosenController@showBlog' );
+
+Route::get('/pegawai/{nama}', 'App\Http\Controllers\DosenController@showNama');
+
+Route::get('/formulir', 'App\Http\Controllers\DosenController@formulir');
+Route::post('/formulir/proses', 'App\Http\Controllers\DosenController@proses');
+
+// route blog
+Route::get('/blog', [BlogController::class, 'home']);
+Route::get('/blog/tentang', [BlogController::class, 'tentang']);
+Route::get('/blog/kontak', [BlogController::class, 'kontak']);
