@@ -83,7 +83,7 @@ Route::get('burgerBites', function () {
 Route::get('perkalian', 'App\Http\Controllers\DosenController@index');
 Route::get('show', 'App\Http\Controllers\DosenController@showBlog' );
 
-Route::get('/pegawai/{nama}', 'App\Http\Controllers\DosenController@showNama');
+// Route::get('/pegawai/{nama}', 'App\Http\Controllers\DosenController@showNama');
 
 Route::get('/formulir', 'App\Http\Controllers\DosenController@formulir');
 Route::post('/formulir/proses', 'App\Http\Controllers\DosenController@proses');
@@ -92,3 +92,19 @@ Route::post('/formulir/proses', 'App\Http\Controllers\DosenController@proses');
 Route::get('/blog', [BlogController::class, 'home']);
 Route::get('/blog/tentang', [BlogController::class, 'tentang']);
 Route::get('/blog/kontak', [BlogController::class, 'kontak']);
+
+// route CRUD
+Route::get('/pegawai', 'App\Http\Controllers\PegawaiController@index');
+
+// add
+Route::get('/pegawai/tambah','App\Http\Controllers\PegawaiController@tambah');
+
+Route::post('/pegawai/store', 'App\Http\Controllers\PegawaiController@store');
+
+// update
+Route::get('/pegawai/edit/{id}','App\Http\Controllers\PegawaiController@edit');
+
+Route::post('/pegawai/update','App\Http\Controllers\PegawaiController@update');
+
+//delete
+Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus');
