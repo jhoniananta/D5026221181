@@ -37,7 +37,6 @@ class PegawaiController extends Controller
         // redirect melempar ke suatu url route pegawai, maka akan query all record
     }
     
-
     public function edit($id){
         // mengambil data pegawai berdasarkan id yang dipilih
         $pegawai = DB::table('pegawai')
@@ -82,4 +81,14 @@ class PegawaiController extends Controller
     		// mengirim data pegawai ke view index
 		return view('index',['pegawai' => $pegawai]);
 	}
+
+    public function view($id){
+        // mengambil data pegawai berdasarkan id yang dipilih
+        $pegawai = DB::table('pegawai')
+                    ->where('pegawai_id', $id) 
+                    ->get();
+
+        // passing data pegawai yang didapat ke view edit.blade.php
+        return view('view', ['pegawai' => $pegawai]);
+    }
 }

@@ -13,7 +13,7 @@
 
 @section('konten')
 	<p>Cari Data Pegawai :</p>
-	<form action="/pegawai/cari" method="GET" >
+	<form action="/pegawai/cari" method="GET" class="form-inline">
 		<input class="form-control" type="text" name="cari" placeholder="Cari Pegawai berdasarkan nama .." value="{{ old('cari') }}">
 		<input type="submit" value="CARI" class="btn btn-primary ml-3">
 	</form>
@@ -35,7 +35,7 @@
                 <td>{{ $p->pegawai_umur }}</td>
                 <td>{{ $p->pegawai_alamat }}</td>
                 <td>
-					<a href="/pegawai/view/{{ $p->pegawai_id }}" class="btn btn-sucess">View</a>
+					<a href="/pegawai/view/{{ $p->pegawai_id }}" class="btn btn-success">View</a>
 					|
                     <a href="/pegawai/edit/{{ $p->pegawai_id }}" class="btn btn-warning">Edit</a>
                     |
