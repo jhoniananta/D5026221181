@@ -123,3 +123,20 @@ Route::get('/nilaikuliah', 'App\Http\Controllers\NilaiKuliahController@index');
 Route::get('/nilaikuliah/tambah','App\Http\Controllers\NilaiKuliahController@tambah');
 
 Route::post('/nilaikuliah/store', 'App\Http\Controllers\NilaiKuliahController@store');
+
+// Route CRUD untuk harddisk
+Route::get('/harddisk', 'App\Http\Controllers\HarddiskController@index');
+
+Route::get('/harddisk/tambah','App\Http\Controllers\HarddiskController@tambah');
+
+Route::post('/harddisk/store', 'App\Http\Controllers\HarddiskController@store');
+
+Route::get('/harddisk/edit/{id}','App\Http\Controllers\HarddiskController@edit');
+
+Route::post('/harddisk/update','App\Http\Controllers\HarddiskController@update');
+
+Route::get('/harddisk/hapus/{id}','App\Http\Controllers\HarddiskController@hapus');
+
+Route::get('/harddisk/cari','App\Http\Controllers\HarddiskController@cari');
+
+Route::get('/harddisk/view/{id}','App\Http\Controllers\HarddiskController@view');
