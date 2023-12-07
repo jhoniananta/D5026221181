@@ -4,11 +4,18 @@
 @section('judul_halaman')
     <h2>Data Harddisk</h2>
 
-    <a href="/harddisk/tambah" class="btn btn-primary"> + Tambah Nilai Kuliah Baru</a>
+    <a href="/harddisk/tambah" class="btn btn-primary"> + Tambah Harddisk baru</a>
     <br>
 @endsection
     
 @section('konten')
+    <p>Cari Data Harddisk :</p>
+    <form action="/harddisk/cari" method="GET" class="form-inline">
+        <input class="form-control" type="text" name="cari" placeholder="Cari Harddisk berdasarkan merk .." value="{{ old('cari') }}">
+        <input type="submit" value="CARI" class="btn btn-primary ml-3">
+    </form>
+		
+	<br/>
     <br>
     <table class="table table-striped table-hover">
         <tr>
