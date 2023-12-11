@@ -140,3 +140,12 @@ Route::get('/harddisk/hapus/{id}','App\Http\Controllers\HarddiskController@hapus
 Route::get('/harddisk/cari','App\Http\Controllers\HarddiskController@cari');
 
 Route::get('/harddisk/view/{id}','App\Http\Controllers\HarddiskController@view');
+
+// Route CRUD untuk mahasiswa
+Route::get('/mahasiswa', 'App\Http\Controllers\MahasiswaController@index');
+
+Route::get('/mahasiswa/edit/{id}','App\Http\Controllers\MahasiswaController@edit');
+
+Route::post('/mahasiswa/update','App\Http\Controllers\MahasiswaController@update');
+
+Route::get('/mahasiswa/view/{id}','App\Http\Controllers\MahasiswaController@view');
